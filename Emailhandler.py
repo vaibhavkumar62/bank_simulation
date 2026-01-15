@@ -1,6 +1,6 @@
 import gmail
 def send_credentials(email,name,acn,pwd):
-    con=gmail.GMail('vaibhavkumar62072@gmail.com','tkjz roaj aiwj emsb')
+    con=gmail.GMail('vaibhavkumar62072@gmail.com','tkjz roaj aiwj emsb')    #email,app password
     body=f'''Hello {name},
     Welcome to ABC Bank,here is your credentials
     Account No = {acn}
@@ -53,4 +53,5 @@ def send_otp_transfer(email,name,otp,amt,to_acn):
 '''
     msg=gmail.Message(to=email,subject='OTP for transfer',text=body)
     con.send(msg)
+
 
